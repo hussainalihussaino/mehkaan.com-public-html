@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8" />
@@ -32,17 +32,17 @@
 </head>
 <body class="bg-gray-50 font-sans">
     <!-- Navbar -->
-    <header id="navbar" class="navbar bg-white shadow-lg">
+    <header id="navbar" class="navbar bg-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center py-4 px-6">
-            <div class="flex items-center">
+            <a href="/" class="flex items-center">
                 <img src="assets/images/mehkaan-logo.svg" alt="Mehkaan Beauty Soap" class="h-10 mr-3" />
                 <span class="text-xl font-bold text-gray-800">Mehkaan <span class="text-pink hidden sm:inline">Beauty Soap</span></span>
-            </div>
+            </a>
             <nav class="hidden md:flex space-x-6">
-                <a href="#" class="text-gray-600 hover:text-gray-900">Home</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900">Products</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900">About</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900">Contact</a>
+                <a href="#home" class="text-gray-600 hover:text-gray-900">Home</a>
+                <a href="#products-section" class="text-gray-600 hover:text-gray-900">Products</a>
+                <a href="#about-section" class="text-gray-600 hover:text-gray-900">About</a>
+                <a href="#contact-section" class="text-gray-600 hover:text-gray-900">Contact</a>
             </nav>
             <button type="button" class="md:hidden focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -55,8 +55,10 @@
         </div>
     </header>
 
+    <section id="home" class="scroll-mt-[72px]"></section>
+
     <!-- Hero Section -->
-    <section id="hero-section" class="hero-section relative w-full h-[calc(100vh-72px)] overflow-hidden">
+    <section id="hero-section" class="hero-section relative w-full h-[calc(100vh-72px)] overflow-hidden scroll-mt-[72px]">
         <div class="absolute inset-0 bg-black opacity-50 backdrop-blur-sm"></div>
         <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover opacity-30">
             <source src="./assets/videos/bg.mp4" type="video/mp4">
@@ -76,7 +78,7 @@
     </section>
 
     <!-- Products Section -->
-    <section  id="products-section" class="products-section py-12 bg-gray-100">
+    <section  id="products-section" class="products-section py-12 bg-gray-100 scroll-mt-[72px]">
         <div class="container mx-auto text-center">
             <h3 class="text-3xl font-bold mb-6 text-gray-800">Our Products</h3>
             <div class="flex flex-wrap justify-center">
@@ -134,7 +136,7 @@
     </section>
     
     <!-- About Section -->
-    <section id="about-section" class="about-section py-12 bg-white">
+    <section id="about-section" class="about-section py-12 bg-white scroll-mt-[72px]">
         <div class="container mx-auto flex flex-col items-center text-center md:flex-row md:text-left md:items-start">
             <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
                 <img src="assets/images/about-us.png" alt="About Mehkaan Beauty Soap" class="rounded-lg shadow-md">
@@ -152,7 +154,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="py-12 bg-gray-100">
+    <section id="contact-section" class="contact-section py-12 bg-gray-100 scroll-mt-[72px]">
         <div class="container mx-auto text-center">
             <h3 class="text-3xl font-bold mb-6 text-gray-800">Contact Us</h3>
             <p class="text-lg text-gray-600 mb-6">
@@ -165,7 +167,7 @@
                 <h4 class="text-xl font-semibold text-green-600 mb-2 text-center md:text-left">Main Location</h4>
                 <p class="text-gray-700 text-center md:text-left">
                     Mehkaan Beauty Soap Factory<br>
-                    1234 Soap Lane, Suite 500<br>
+                    23434 Khudukhail, Dakara<br>
                     Buner (KPK), Pakistan
                 </p>
             </address>
@@ -195,7 +197,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- Footer -->
     <footer id="footer" class="footer bg-gray-800 text-white py-6">
