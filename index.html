@@ -44,7 +44,9 @@
                 <a href="#about-section" class="text-gray-600 hover:text-gray-900">About</a>
                 <a href="#contact-section" class="text-gray-600 hover:text-gray-900">Contact</a>
             </nav>
-            <button type="button" class="md:hidden focus:outline-none">
+
+            <!-- Mobile Menu Button -->
+            <button type="button" id="hamburger" class="md:hidden focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
@@ -53,9 +55,17 @@
                 <span class="sr-only">Open main menu</span>
             </button>
         </div>
+
+        <!-- Mobile Menu -->
+        <nav id="mobileMenu" class="md:hidden bg-white shadow-lg hidden">
+            <a href="#home" class="block px-6 py-3 text-center text-gray-600 hover:bg-gray-100">Home</a>
+            <a href="#products-section" class="block px-6 py-3 text-center text-gray-600 hover:bg-gray-100">Products</a>
+            <a href="#about-section" class="block px-6 py-3 text-center text-gray-600 hover:bg-gray-100">About</a>
+            <a href="#contact-section" class="block px-6 py-3 text-center text-gray-600 hover:bg-gray-100">Contact</a>
+        </nav>
     </header>
 
-    <section id="home" class="scroll-mt-[72px]"></section>
+    <section id="home" class="scroll-mt-[264px] md:scroll-mt-[72px]"></section>
 
     <!-- Hero Section -->
     <section id="hero-section" class="hero-section relative w-full h-[calc(100vh-72px)] overflow-hidden scroll-mt-[72px]">
@@ -64,7 +74,7 @@
             <source src="./assets/videos/bg.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <div class="relative px-1 sm:px-0 z-10 flex items-center justify-center h-full">
+        <div class="relative px-3 sm:px-0 z-10 flex items-center justify-center h-full">
             <div class="bg-white px-3 sm:px-8 py-6 sm:py-12 rounded-lg shadow-lg text-center">
                 <h2 class="text-xl xs: sm:text-3xl font-bold mb-2 text-green-600">
                     مہکان، صفائی کی پہچان
@@ -204,5 +214,7 @@
             <p>&copy; 2024 Mehkaan Beauty Soap. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
