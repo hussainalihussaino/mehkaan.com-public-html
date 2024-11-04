@@ -1,3 +1,23 @@
-.hero-section {
-    background-image: url('../images/1500.png');
+:root {
+    --color-pink: #db3f77;
+    --color-coconut: #396367;
+    --color-lemon: #279d56;
+}
+.bg-pink {
+    background-color: var(--color-pink);
+}
+.bg-coconut {
+    background-color: var(--color-coconut);
+}
+.bg-lemon {
+    background-color: var(--color-lemon);
+}
+.text-pink {
+    color: var(--color-pink);
+}
+.text-coconut {
+    color: var(--color-coconut);
+}
+.text-lemon {
+    color: var(--color-lemon);
 }
